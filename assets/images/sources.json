@@ -1,0 +1,67 @@
+{
+  "source": "Competition photographs supplied by Roy through a publicly accessible Google Drive folder. No additional license claim is made.",
+  "sourceFolder": "https://drive.google.com/drive/folders/1zMkNit_qeTucnTMFs3HvdfXUgva6xG8y",
+  "processing": "Downloaded original JPEGs without authentication. Resized to 1800 pixels on the long edge, encoded as WebP and progressive JPEG. EXIF metadata removed.",
+  "photos": [
+    {
+      "file": "worldskills-workstation.webp",
+      "fallback": "worldskills-workstation.jpg",
+      "width": 1800,
+      "height": 1202,
+      "originalFilename": "DSC01654.JPG",
+      "sourceUrl": "https://drive.google.com/file/d/1LaYC9KrzEGuchgM1aWm6P82ep3nUCUP8/view",
+      "captionEn": "At the competition workstation",
+      "captionZh": "競賽工作站現場",
+      "webpBytes": 68824,
+      "jpegBytes": 166427
+    },
+    {
+      "file": "worldskills-focus.webp",
+      "fallback": "worldskills-focus.jpg",
+      "width": 1800,
+      "height": 1202,
+      "originalFilename": "DSC01655.JPG",
+      "sourceUrl": "https://drive.google.com/file/d/1hUgMMoQzeFQ7Xz9ke3_DvPm_0RuuEL58/view",
+      "captionEn": "Focused on the competition task",
+      "captionZh": "專注處理競賽任務",
+      "webpBytes": 52266,
+      "jpegBytes": 136915
+    },
+    {
+      "file": "worldskills-chinese-taipei.webp",
+      "fallback": "worldskills-chinese-taipei.jpg",
+      "width": 1800,
+      "height": 1202,
+      "originalFilename": "DSC01656.JPG",
+      "sourceUrl": "https://drive.google.com/file/d/1ZgpHEiQRzpY_PGoRlPaY6hp2IeKVtof4/view",
+      "captionEn": "Chinese Taipei at WorldSkills Asia",
+      "captionZh": "中華台北・亞洲技能競賽",
+      "webpBytes": 90326,
+      "jpegBytes": 185061
+    },
+    {
+      "file": "worldskills-side-view.webp",
+      "fallback": "worldskills-side-view.jpg",
+      "width": 1800,
+      "height": 1202,
+      "originalFilename": "DSC01657.JPG",
+      "sourceUrl": "https://drive.google.com/file/d/1KdppgPlr2Iq6YOWAMKksKWSkzekIkbGX/view",
+      "captionEn": "In the WorldSkills Asia competition area",
+      "captionZh": "亞洲技能競賽現場",
+      "webpBytes": 79840,
+      "jpegBytes": 183748
+    },
+    {
+      "file": "worldskills-coding.webp",
+      "fallback": "worldskills-coding.jpg",
+      "width": 1800,
+      "height": 1202,
+      "originalFilename": "DSC01831.JPG",
+      "sourceUrl": "https://drive.google.com/file/d/1DKoF3O6jAU84tjbX1C7Nn5FdzBR3L8ky/view",
+      "captionEn": "Coding at WorldSkills Asia",
+      "captionZh": "亞洲技能競賽・程式開發現場",
+      "webpBytes": 107068,
+      "jpegBytes": 225079
+    }
+  ]
+}

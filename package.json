@@ -1,0 +1,10 @@
+{
+  "name": "roy-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Roy's bilingual, buildless GitHub Pages portfolio",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "check": "node --check app.js && node --check content.js && node scripts/check.mjs"
+  }
+}
