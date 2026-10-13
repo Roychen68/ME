@@ -285,10 +285,10 @@ svg {
 
 /* The cover: Roy's own photograph and a short introduction. */
 .hero {
-    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1) 70%),
-    url("assets/images/worldskills-side-view.webp");
+    background-image: linear-gradient(90deg, rgba(8, 10, 13, .05) 0%, rgba(8, 10, 13, .2) 38%, rgba(8, 10, 13, .82) 65%, rgba(8, 10, 13, .95) 100%),
+    url("assets/images/roy-train.webp");
     background-size: cover;
-    background-position: right;
+    background-position: 32% 20%;
     background-repeat: no-repeat;
     position: relative;
     isolation: isolate;
@@ -661,8 +661,8 @@ svg {
     height: auto;
     aspect-ratio: 1.12;
     object-fit: cover;
-    object-position: center 35%;
-    filter: saturate(.6) brightness(.9);
+    object-position: 28% center;
+    filter: none;
 }
 
 .about-profile h3, .about-profile strong {
@@ -1235,7 +1235,12 @@ svg {
 
 .gallery-item:first-child img {
     aspect-ratio: .83;
-    object-position: 70% center;
+    object-position: 28% center;
+}
+
+.gallery-item[data-photo='roy-award-moment.webp'] img {
+    object-fit: contain;
+    background: #0c0e12;
 }
 
 .gallery-item button:hover img {
@@ -2280,8 +2285,8 @@ html[lang='zh-Hant'] .contact-heading em {
 
     .hero {
         background-image: linear-gradient(180deg, rgba(8, 10, 13, .12) 0%, rgba(8, 10, 13, .45) 32%, rgba(8, 10, 13, .9) 68%, #080a0d 100%),
-        url("assets/images/worldskills-side-view.webp");
-        background-position: 72% center;
+        url("assets/images/roy-train.webp");
+        background-position: 28% center;
         padding-top: 35px;
     }
 

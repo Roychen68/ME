@@ -1,7 +1,7 @@
 {
-  "source": "Competition photographs supplied by Roy through a publicly accessible Google Drive folder. No additional license claim is made.",
+  "source": "Photographs supplied by Roy through a publicly accessible Google Drive folder and original local uploads. No additional license claim is made.",
   "sourceFolder": "https://drive.google.com/drive/folders/1zMkNit_qeTucnTMFs3HvdfXUgva6xG8y",
-  "processing": "Downloaded original JPEGs without authentication. Resized to 1800 pixels on the long edge, encoded as WebP and progressive JPEG. EXIF metadata removed.",
+  "processing": "Google Drive photographs: resized to 1800 pixels on the long edge and encoded as WebP and progressive JPEG. Local uploads: resized proportionally to at most 2000 pixels on the long edge without upscaling and encoded as WebP. EXIF metadata removed. No cropping, color edits or AI alteration.",
   "photos": [
     {
       "file": "worldskills-workstation.webp",
@@ -62,6 +62,71 @@
       "captionZh": "亞洲技能競賽・程式開發現場",
       "webpBytes": 107068,
       "jpegBytes": 225079
+    },
+    {
+      "file": "roy-train.webp",
+      "width": 2000,
+      "height": 1500,
+      "originalFilename": "IMG_4557.JPG",
+      "originalWidth": 5712,
+      "originalHeight": 4284,
+      "source": "User-supplied local photograph",
+      "captionEn": "Roy on a train journey",
+      "captionZh": "Roy 的列車旅程",
+      "webpBytes": 489748,
+      "processing": "Resized proportionally to at most 2000 pixels on the long edge without upscaling; WebP encoded at quality 86. EXIF removed. No cropping, color edits or AI alteration."
+    },
+    {
+      "file": "roy-train-dark.webp",
+      "width": 2000,
+      "height": 1500,
+      "originalFilename": "IMG_4556.jpg",
+      "originalWidth": 5712,
+      "originalHeight": 4284,
+      "source": "User-supplied local photograph",
+      "captionEn": "Roy on a train journey — darker photograph",
+      "captionZh": "Roy 的列車旅程・較深色原照",
+      "webpBytes": 191712,
+      "processing": "Resized proportionally to at most 2000 pixels on the long edge without upscaling; WebP encoded at quality 86. EXIF removed. No cropping, color edits or AI alteration."
+    },
+    {
+      "file": "roy-award-moment.webp",
+      "width": 1593,
+      "height": 1028,
+      "originalFilename": "IMG_2261.JPG",
+      "originalWidth": 1593,
+      "originalHeight": 1028,
+      "source": "User-supplied local photograph",
+      "captionEn": "A personal achievement moment",
+      "captionZh": "紀念成就的時刻",
+      "webpBytes": 156044,
+      "processing": "Resized proportionally to at most 2000 pixels on the long edge without upscaling; WebP encoded at quality 86. EXIF removed. No cropping, color edits or AI alteration."
+    },
+    {
+      "file": "worldskills-task-side.webp",
+      "width": 2000,
+      "height": 1333,
+      "originalFilename": "EST_0030.JPG",
+      "originalWidth": 6720,
+      "originalHeight": 4480,
+      "source": "User-supplied local photograph",
+      "captionEn": "Working through a WorldSkills Asia competition task",
+      "captionZh": "亞洲技能競賽・任務實作現場",
+      "webpBytes": 56668,
+      "processing": "Resized proportionally to at most 2000 pixels on the long edge without upscaling; WebP encoded at quality 86. EXIF removed. No cropping, color edits or AI alteration."
+    },
+    {
+      "file": "worldskills-task-focus.webp",
+      "width": 2000,
+      "height": 1333,
+      "originalFilename": "EST_0036.JPG",
+      "originalWidth": 6720,
+      "originalHeight": 4480,
+      "source": "User-supplied local photograph",
+      "captionEn": "Focused on a WorldSkills Asia competition task",
+      "captionZh": "亞洲技能競賽・專注解題",
+      "webpBytes": 52860,
+      "processing": "Resized proportionally to at most 2000 pixels on the long edge without upscaling; WebP encoded at quality 86. EXIF removed. No cropping, color edits or AI alteration."
     }
   ]
 }

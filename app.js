@@ -18,6 +18,7 @@
 
   // Attribute-only labels, as well as visible copy, change with the language.
   $$('.project-meta > span').forEach((element, i) => { element.dataset.i18n = `project${i + 1}Meta`; });
+  $$('.project-card').forEach((card, index) => { card.href = config.projectSites[index]; });
 
   function showToast(message) {
     const toast = $('#toast');
@@ -28,11 +29,7 @@
   }
 
   function renderResume() {
-    const projectLinks = [
-      'https://github.com/Roychen68/Vocabulary',
-      'https://github.com/Roychen68/GoldenHandAwardVisiting',
-      'https://github.com/Roychen68/world-skills-2025-F-latest'
-    ];
+    const projectLinks = config.projectSites;
     const projects = projectLinks.map((url, index) => `<h3>${t(`cvProject${index + 1}`)}</h3><p>${t(`cvProject${index + 1}Desc`)}</p><a class="cv-project-link" href="${url}" target="_blank" rel="noopener noreferrer">${url.replace('https://', '')}</a>`).join('');
     const markup = `<article class="resume-sheet" lang="${language === 'zh' ? 'zh-Hant' : 'en'}"><header class="cv-heading"><div><h1>Roy<span>.</span></h1><p>${t('cvRole')}</p></div><div class="cv-contacts"><a href="${config.github}" target="_blank" rel="noopener noreferrer">github.com/Roychen68</a><a href="${config.instagram}" target="_blank" rel="noopener noreferrer">instagram.com/roy_webtech</a><span>Discord: ${config.discordUsername}</span></div></header><section class="cv-section"><h2>${t('cvProfile')}</h2><p>${t('cvSummary')}</p></section><section class="cv-section"><h2>${t('cvSkills')}</h2><p>${t('cvSkillList')}</p></section><section class="cv-section"><h2>${t('cvProjects')}</h2>${projects}</section><section class="cv-section"><h2>${t('cvExperience')}</h2><p>${t('cvWSA')}</p><p>${t('cvDream')}</p></section><section class="cv-section"><h2>${t('cvEducation')}</h2><p>${t('cvEducationDesc')}</p></section><footer class="cv-footer">${t('cvFooter')}</footer></article>`;
     $('#resume-preview').innerHTML = markup;
@@ -77,12 +74,13 @@
     savePreference('roy-language', next);
   }
 
-  // Three composed thumbnails lead to all five full-resolution photographs.
+  // A mix of personal and competition moments leads to the complete photo viewer.
   const gallery = $('#gallery-grid');
-  photos.slice(0, 3).forEach((photo, index) => {
+  photos.slice(0, 5).forEach((photo, index) => {
     const figure = document.createElement('figure');
     figure.className = 'gallery-item reveal';
-    figure.innerHTML = `<button type="button" aria-haspopup="dialog"><img src="assets/images/${photo.file}" alt="${photo[language]}" loading="lazy" decoding="async" width="1800" height="1202"><span class="gallery-overlay"><span>${photo[language]}</span><svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></span></button>`;
+    figure.dataset.photo = photo.file;
+    figure.innerHTML = `<button type="button" aria-haspopup="dialog"><img src="assets/images/${photo.file}" alt="${photo[language]}" loading="lazy" decoding="async" width="${photo.width || 1800}" height="${photo.height || 1202}"><span class="gallery-overlay"><span>${photo[language]}</span><svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></span></button>`;
     $('button', figure).addEventListener('click', () => {
       galleryIndex = index;
       updatePhoto();

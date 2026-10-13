@@ -1,6 +1,6 @@
 # Roy's portfolio
 
-A bilingual personal website and résumé for Roy, a curious second-year high school student in Information Technology (資訊科高二學生). The full-screen dark cover uses Roy's photo as the background with his short introduction overlaid. Floating navigation sits on the left edge, with competition photography, selected GitHub projects, an animated introduction, and automatic endless scrolling below.
+A bilingual personal website and résumé for Roy, a curious second-year high school student in Information Technology (資訊科高二學生). The full-screen dark cover uses Roy's photo as the background with his short introduction overlaid. Floating navigation sits on the left edge, with personal and competition photography, selected web projects, an animated introduction, and automatic endless scrolling below.
 
 The site uses plain HTML, CSS, and JavaScript. It needs no framework, installation step, compilation, API key, or server at deployment time. Fonts and photographs are stored locally.
 
@@ -35,14 +35,18 @@ There is no build command. All internal assets use relative URLs, so the same fi
 
 | File | Purpose |
 | --- | --- |
-| `content.js` | English and Traditional Chinese text, gallery content, and optional configuration |
+| `content.js` | English and Traditional Chinese text, gallery content, shared live project URLs, and optional configuration |
 | `index.html` | Page structure, profile links, projects, metadata, and search-engine profile information |
 | `styles.css` | Layout, colors, responsive design, motion, and print styles |
 | `app.js` | Language switching, intro animation, gallery, navigation, scroll loop, Discord, and résumé behavior |
-| `assets/images/` | Competition photos and GitHub avatar |
+| `assets/images/` | Optimized personal and competition photos, plus the GitHub avatar |
 | `assets/images/sources.json` | Original photo filenames, sources, and image processing details |
 
 When editing text, update the matching key in both `PORTFOLIO_CONTENT.en` and `PORTFOLIO_CONTENT.zh`. Update the English fallback text in `index.html` as well, so the core introduction remains useful without JavaScript. Check project destinations and metadata when changing identity or résumé details.
+
+Project cards and résumé project links open the live websites. Their three shared URLs are stored in `window.PORTFOLIO_CONFIG.projectSites` in `content.js`; keep that array in the same order as the project descriptions.
+
+The cover uses the third photo Roy supplied, `IMG_4557.JPG`, optimized locally as `assets/images/roy-train.webp`. The About profile uses the first photo, `IMG_4556.jpg`, as `assets/images/roy-train-dark.webp`. The main gallery shows five thumbnails; its full viewer contains all ten photographs: the five newly supplied photos and the five original competition photos.
 
 The **Résumé** button opens a printable résumé in the selected language. Choose **Print / Save PDF**, then use your browser's **Save as PDF** destination. This produces a PDF from the current content; it is not a separate résumé file that can become outdated.
 
@@ -60,7 +64,9 @@ The widget remains hidden when that value is empty. The server must allow its wi
 
 - Roy supplied his schooling as a second-year high school student in Information Technology (資訊科高二學生), his electronics/electrical field of study and interests in software development and local AI agents, his participation in the **Web Technologies junior category** at **WorldSkills Asia 2025** with Chinese Taipei, and attendance in **GJ-8-9 創製波動力** through the **青年百億海外圓夢基金計畫**.
 - Public projects and the profile avatar come from [Roychen68 on GitHub](https://github.com/Roychen68). Selected repositories are [Vocabulary](https://github.com/Roychen68/Vocabulary), [GoldenHandAwardVisiting](https://github.com/Roychen68/GoldenHandAwardVisiting), and [world-skills-2025-F-latest](https://github.com/Roychen68/world-skills-2025-F-latest). The project previews are interface concepts, not screenshots of deployed applications.
+- Visit the live projects: [Vocabulary practice](https://roychen68.github.io/Vocabulary/site/), [European visit journal](https://roychen68.github.io/GoldenHandAwardVisiting/), and [Lyon travel interface](https://roychen68.github.io/world-skills-2025-F-latest/).
 - Competition photographs come from [the Google Drive album Roy supplied](https://drive.google.com/drive/folders/1zMkNit_qeTucnTMFs3HvdfXUgva6xG8y). The local WebP and JPEG versions were resized, and image metadata was removed. Individual source links are recorded in `assets/images/sources.json`.
+- Roy supplied five additional photos directly. They were resized proportionally, saved locally as WebP, and stripped of EXIF metadata. `assets/images/sources.json` records their original filenames and processing details without personal download paths.
 - The program link points to the [official Youth Overseas Dream Fund website](https://twpathfinder.yda.gov.tw/).
 - The public Instagram destination is [@roy_webtech](https://www.instagram.com/roy_webtech/). Instagram profile content could not be read reliably, so it was not used to infer additional biographical facts. The personal `roy._.chen234` account is not exposed on the site.
 
